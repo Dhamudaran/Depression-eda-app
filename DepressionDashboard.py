@@ -6,7 +6,7 @@ import plotly.express as px
 import io
 
 # Load data
-data = pd.read_csv(r"D:\Python\Guvi\EDA\EDA\depression_dataset.csv")
+data = pd.read_csv("depression_dataset.csv")
 
 # Page config
 st.set_page_config(page_title='Visualization of Depression Data', layout='wide')
