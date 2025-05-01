@@ -73,7 +73,7 @@ elif section == "Gender vs Suicidal Thoughts":
 elif section == "KDE Plot of CGPA":
     st.subheader(section)
     fig, ax = plt.subplots(figsize=(10,5))
-    sns.kdeplot(filtered_data['CGPA'], shade=True, color='purple', ax=ax)
+    sns.kdeplot(filtered_data['CGPA'], fill=True, color='purple', ax=ax)
     ax.set_title(section)
     st.pyplot(fig)
     st.download_button("Download Plot as PNG", get_image_download_link(fig), "kde_cgpa.png", "image/png")
